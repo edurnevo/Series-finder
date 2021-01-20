@@ -86,8 +86,8 @@ function paintConsole() {
 
 
 
-const logButton = document.querySelector(".js-logButton");
-logButton.addEventListener('click', paintConsole);
+//const logButton = document.querySelector(".js-logButton");
+//logButton.addEventListener('click', paintConsole);
 
 
 
