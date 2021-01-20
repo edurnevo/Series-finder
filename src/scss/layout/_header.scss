@@ -9,22 +9,22 @@
         font-family: 'Alfa Slab One', cursive;
         text-transform: uppercase;
         font-size: 35px;
-        text-shadow: 3px 3px 3px #aaa;
+        text-shadow: 3px 3px 3px orange;
         }
 }
 
-
-.js-input    {
+.input    {
     height: 40px;
     width: 250px;
     background-color: black;
     border: 3px solid orange;
     border-radius: 5px;
+    font-family: 'Play', sans-serif;
     color: orange;
     outline: none;
 }
 
-.js-button {
+.button {
     font-family: 'Alfa Slab One', cursive;
     color: orange;
     background-color: black;

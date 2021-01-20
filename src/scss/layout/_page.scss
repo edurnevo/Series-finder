@@ -2,4 +2,65 @@
   height: 100vh;
   padding: 30px;
   background-color: rgb(28, 105, 98);
+  //background-image: url(.../images/film.jpg);
 }
+
+.main-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Alfa Slab One', cursive;
+  color: orange;
+}
+
+.search-area  {
+  margin: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .search-title {
+    font-family: 'Play', sans-serif;
+  }
+  .search-list  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.favorite-area  {
+  margin: 20px;
+  padding: 5px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  order: -1;
+  overflow: auto;
+  border: 5px solid orange;
+  border-radius: 5px;
+  .favorite-title{
+    font-family: 'Play', sans-serif;
+  }
+  .favorite-list  {
+    margin: 15px 5px;
+    list-style: none;
+    min-width: 200px;
+    margin: 15px 5px 15px 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: orange;
+  }
+}
+
