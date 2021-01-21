@@ -21,13 +21,45 @@
   flex-wrap: wrap;
   justify-content: center;
   .search-title {
-    font-family: 'Play', sans-serif;
+   font-family: 'Play', sans-serif;
   }
-  .search-list  {
+  .search-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
+    font-family: 'Play', sans-serif;
+  }
+  .js-list  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .js-filmTitle {
+    margin-top: -115px;
+    color: black;
+    font-size: 20px;
+  }
+  .js-image{
+    margin: 5px 0px 50px 10px;
+    padding: 5px 2px 70px;
+    border-radius: 10px;
+    background-color: orange;
+
+  }
+  .js-status  {
+    margin-bottom: 15px;
+    color: black;
+    font-size: 13px;
+  }
+  .js-buttonToFavorites {
+    background-color: black;
+    border: 3px solid orange;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+    color: orange;
   }
 }
 
@@ -38,8 +70,8 @@
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-content: flex-start;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   order: -1;
   overflow: auto;
@@ -54,11 +86,6 @@
     min-width: 200px;
     margin: 15px 5px 15px 0px;
     padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    justify-content: space-around;
-    align-items: center;
     border-radius: 10px;
     background-color: orange;
   }

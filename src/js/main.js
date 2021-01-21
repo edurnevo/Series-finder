@@ -33,14 +33,14 @@ const paintSeriesList = () => {
       htmlCode += `<img class="js-image" src="${seriesList[i].show.image.medium}"/>`;
       htmlCode += `<h3 class="js-filmTitle">${seriesList[i].show.name}</h3>`;
       htmlCode += `<button type="button" class="js-buttonToFavorites" alt="Añadir a favoritos"data-id="${i}">Añadir a favoritos</button>`;
-      htmlCode += `<p>${seriesList[i].show.status}</p>`;
+      htmlCode += `<p class="js-status">${seriesList[i].show.status}</p>`;
       htmlCode += `</li>`;
     } else  {
       htmlCode += `<li id="${i}" class="js-list">`;
       htmlCode += `<img class="js-image" src="${imageInstead}"/>`;
       htmlCode += `<h3 class="js-filmTitle">${seriesList[i].show.name}</h3>`;
       htmlCode += `<button type="button" class="js-buttonToFavorites" alt="Añadir a favoritos" data-id="${i}">Añadir a favoritos</button>`;
-      htmlCode += `<p>${seriesList[i].show.status}</p>`;
+      htmlCode += `<p class="js-status">${seriesList[i].show.status}</p>`;
       htmlCode += `</li>`;
     }
   }
