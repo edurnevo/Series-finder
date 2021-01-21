@@ -4,31 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Buscador de series</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body class="body">
-    <header>
-      <h1 class="title">Buscador de series</h1>
-    </header>
-    <main>
-
-      <form action="">
+    <header class="header">
+      <h1 class="header_title">Buscador de series</h1>
+      <form class="form" action="">
         <label for="input"></label>
         <input type="text" name="input" class="js-input input" value="">
-
         <input type="button" class="js-button button" value="Search">
         </input>
-        <input type="button" value="LOG" class="js-logButton">
       </form>
-      <div class="main.container">
-        <div class="serch-area">
-          <ul class="js-filmsList"></ul>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        <div class="search-area">
+          <h2 class="search-title">Resultado de la búsqueda</h2>
+          <ul class="js-filmsList search-list"></ul>
         </div>
-        <div class="favorite-area">
-          <ul class="js-containerFavoritesList"></ul>
-        </div>
+        <aside class="favorite-area">
+          <h2 class="favorite-title">Lista de Favoritos</h2>
+          <ul class="js-containerFavoritesList favorite-list"></ul>
+        </aside>
       </div>
     </main>
     <script src="./assets/js/main.js"></script>
