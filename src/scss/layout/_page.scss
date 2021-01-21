@@ -1,8 +1,11 @@
-.body {
+body {
   height: 100vh;
   padding: 30px;
-  background-color: rgb(28, 105, 98);
-  //background-image: url(.../images/film.jpg);
+  //background-color: rgb(28, 105, 98);
+  background-image: url(../images/film2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .main-container {
@@ -66,26 +69,53 @@
   margin: 20px;
   padding: 5px;
   width: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
   order: -1;
-  overflow: auto;
-  border: 5px solid orange;
-  border-radius: 5px;
+  border: 10px solid orange;
+  border-radius: 8px;
   .favorite-title{
     font-family: 'Play', sans-serif;
   }
   .favorite-list  {
-    margin: 15px 5px;
+    margin: 15px 15px;
     list-style: none;
-    min-width: 200px;
-    margin: 15px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 5px;
+  }
+  .js-favoritesList {
+    width: 80%;
     border-radius: 10px;
     background-color: orange;
+    margin: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .js-imageFav  {
+    height: 90px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .js-listFav {
+    font-family: 'Play', sans-serif;
+    color: black;
+    font-size: 15px;
+    align-items: center;
+  }
+  .js-removeFromFavorites {
+    margin-top: 10px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+    font-size: 10px;
+    color: orange;
+    margin-bottom: 15px;
   }
 }
 

@@ -84,8 +84,8 @@ function paintConsole() {
 }
 
 
-//const logButton = document.querySelector(".js-logButton");
-//logButton.addEventListener('click', paintConsole);
+// const logButton = document.querySelector(".js-logButton");
+// logButton.addEventListener('click', paintConsole);
 
 
 
@@ -96,13 +96,13 @@ const paintFavoriteList = () => {
       htmlCode += `<li class="js-favoritesList">`;
       htmlCode += `<img src="${serie.show.image.medium}" class="js-imageFav">`;
       htmlCode += `<h3 class="js-listFav">${serie.show.name}</h3>`;
-      htmlCode += `<button type="button" class="js-removeFromFavorites" alt="Sacar de favoritos" data-id="${serie.show.id}"></button>`;
+      htmlCode += `<button type="button" class="js-removeFromFavorites" alt="Sacar de favoritos" data-id="${serie.show.id}">Eliminar de Favoritos</button>`;
       htmlCode += '</li>';
     } else{
       htmlCode += `<li class="js-favoritesList">`;
       htmlCode += `<img src="${imageInstead}" class="js-imageFav">`;
       htmlCode += `<h3 class="js-listFav">${serie.show.name}</h3>`;
-      htmlCode += `<button type="button" class="js-removeFromFavorites" alt="Sacar de favoritos" data-id="${serie.show.id}"></button>`;
+      htmlCode += `<button type="button" class="js-removeFromFavorites" alt="Sacar de favoritos" data-id="${serie.show.id}">Eliminar de Favoritos</button>`;
       htmlCode += '</li>';
     }
   }
