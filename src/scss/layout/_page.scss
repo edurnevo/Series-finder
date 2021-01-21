@@ -16,12 +16,11 @@
 .search-area  {
   margin: 20px;
   width: 70%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   .search-title {
    font-family: 'Play', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   }
   .search-list {
     display: flex;
@@ -47,7 +46,6 @@
     padding: 5px 2px 70px;
     border-radius: 10px;
     background-color: orange;
-
   }
   .js-status  {
     margin-bottom: 15px;
